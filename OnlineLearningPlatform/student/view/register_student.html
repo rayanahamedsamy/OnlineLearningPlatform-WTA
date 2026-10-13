@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+
+    <h1>Student Registration</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter name" required>
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="xyz@gmail.com" required>
+            <br><br>
+
+            <p>Gender:</p>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <br><br>
+
+            <label>City:</label>
+            <select name="city">
+                <option value="dhaka">Dhaka</option>
+                <option value="feni">Feni</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Enter username" required>
+            <br><br>
+
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+            <br><br>
+
+            <label>Confirm Password:</label>
+            <input type="password" name="confirm_password" placeholder="Retype password" required>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login</a></p>
+
+</body>
+</html>
