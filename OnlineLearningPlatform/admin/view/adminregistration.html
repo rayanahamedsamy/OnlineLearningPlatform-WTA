@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educore-Register Admin</title>
+</head>
+<body>
+    <header>
+  <a href="./hompage.html"><img src="../imgs/EducoreLogo.png" alt="EduCore"></a>
+  <nav>
+    <ul>
+      <li><a href="./adminpage.html">Dashboard</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Instructors</a></li>
+    </ul>
+  </nav>
+  <div>
+    <a href="./adminpage.html">BacK</a>
+    <br>
+    <a href="#">Log Out</a>
+  </div>
+</header>
+ 
+<main>
+ 
+  <section>
+    <h1>Register New Admin</h1>
+  </section>
+ 
+  <section>
+    <form action="#">
+    <fieldset>
+        <legend>Login Information</legend>
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username"></td>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+                <td><label for="accType">Account Type:</label></td>
+                <td>    
+                    <select name="accType" id="accType">
+                    <option value="admin">Admin</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <br>
+    <form action="#">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" name="fullname"></td>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gender" id="gender" value="Male">Male</td>
+                    <td><input type="radio" name="gender" id="gender" value="Female">Female</td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" name="dob"></td>
+                    <td>Phone</td>
+                    <td><input type="number" name="phone"></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td>    
+                        <select name="countyr" id="country">
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="germany">Germany</option>
+                        <option value="scotland">Scotland</option>
+                        </select>
+                    </td>
+                    <td>City</td>
+                    <td><input type="text" name="city"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+      <br>
+ 
+      <fieldset>
+        <legend>Work Details</legend>
+ 
+        <label for="employee-id">Employee ID</label>
+        <input type="text" id="employee-id" name="employee_id" required>
+ 
+        <label for="role">Admin role</label>
+        <select id="role" name="role" required>
+          <option value="">Select a role</option>
+          <option value="admin">Admin</option>
+          <option value="support_admin">Support Admin</option>
+        </select>
+      </fieldset>
+      <br>
+      <button type="submit">Register Admin</button>
+      <button type="reset">Clear</button>
+    </form>
+  </section>
+</main>
+
+<br>
+ 
+<footer>
+  <div>
+    <a href="./hompage.html"><img src="../imgs/EducoreLogo.png" alt="EduCore"></a>
+    <p>EduCore admin area. Manage courses, instructors and learners.</p>
+  </div>
+ 
+  <div>
+    <h4>SUPPORT</h4>
+    <ul>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </div>
+ 
+  <hr>
+  <p>&copy; 2026 Educore Inc. All rights reserved.</p>
+</footer>
+</body>
+</html>
