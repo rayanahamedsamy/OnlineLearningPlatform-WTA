@@ -3,166 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Educore | Home Page</title>
+    <link rel="stylesheet" href="../css/homepage.css">
 </head>
 <body>
-    <header>
-  <a href="./hompage.html"><img src="../imgs/EducoreLogo.png" alt="EduCore"></a>
-  <nav>
-    <ul>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#">Instructors</a></li>
-      <li><a href="#">Prices</a></li>
-      <li><a href="#about">About Us</a></li>
-    </ul>
-  </nav>
-  <div>
-    <a href="./login.html">Login</a> <br>
-    <a href="#">Sign Up</a>
-  </div>
-</header>
- 
-<main>
- 
-  <section>
-    <div>
-      <h1>Learn Skills That Actually Matter in 2026!</h1>
-      <p>EduCore connects ambitious minds with world-class instructors. Build real skills, earn recognized certificates, and transform your career at your own pace.</p>
-      <a href="#courses">Explore Courses</a>
-      <a href="#">Watch Demo</a>
-    </div>
-    <img src="#" alt="Video and design editing tools">
-  </section>
- 
-  <section>
-    <div>
-      <p><strong>100K+</strong></p>
-      <p>Active Learners</p>
-    </div>
-    <div>
-      <p><strong>700+</strong></p>
-      <p>Expert Courses</p>
-    </div>
-    <div>
-      <p><strong>120+</strong></p>
-      <p>World-class Instructors</p>
-    </div>
-    <div>
-      <p><strong>95%</strong></p>
-      <p>Satisfaction Rate</p>
+  <section class="hero">
+    <header class="nav">
+      <img class="logo" src="../imgs/EducoreLogo.png" alt="Educore">
+      <nav>
+        <ul>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#">Instructors</a></li>
+          <li><a href="#courses">Prices</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="auth">
+        <a href="/commonui/view/login.html">Login</a>
+        <a class="signup" href="#">Sign Up</a>
+      </div>
+    </header>
+
+    <div class="hero-body">
+      <div>
+        <h1><span>Learn Skills</span><br>That Actually Matter in 2026!</h1>
+        <p>EduCore connects ambitious minds with world-class instructors. Build real skills, earn recognized certificates, and transform your career at your own pace.</p>
+        <div class="cta">
+          <a class="btn-white" href="#courses">Explore Courses</a>
+          <a class="demo" href="#"><i></i>Watch Demo</a>
+        </div>
+      </div>
+      <div class="hero-art"><img src="../imgs/heroimg.png" alt="Hero-art"></div>
     </div>
   </section>
- 
-  <section id="courses">
-    <h2>Trending Courses This week</h2>
-    <a href="#">View All Courses</a>
- 
-    <article>
-      <img src="imgs/" alt="UI/UX Reactive Designing Mastery">
-      <span>Free Trial</span>
-      <span>Creative</span>
-      <h3>UI/UX Reactive Designing Mastery</h3>
-      <hr>
-      <p>24.99 $</p>
-      <p>4.9 Rating</p>
-      <p>2400+ Students</p>
-    </article>
- 
-    <article>
-      <img src="imgs/" alt="Machine Learning With Python: Zero to Expert">
-      <span>Best Seller</span>
-      <span>AI &amp; ML</span>
-      <h3>Machine Learning With Python: Zero to Expert</h3>
-      <hr>
-      <p>24.99 $</p>
-      <p>4.9 Rating</p>
-      <p>2400+ Students</p>
-    </article>
- 
-    <article>
-      <img src="imgs/" alt="Full-Stack React &amp; Node.js Development">
-      <span>New</span>
-      <span>Dev</span>
-      <h3>Full-Stack React &amp; Node.js Development</h3>
-      <hr>
-      <p>24.99 $</p>
-      <p>4.9 Rating</p>
-      <p>2400+ Students</p>
-    </article>
- 
-    <article>
-      <img src="imgs/" alt="Growth Marketing &amp; Data-Driven Strategy">
-      <span>Hot</span>
-      <span>Business</span>
-      <h3>Growth Marketing &amp; Data-Driven Strategy</h3>
-      <hr>
-      <p>24.99 $</p>
-      <p>4.9 Rating</p>
-      <p>2400+ Students</p>
-    </article>
-  </section>
- 
-  <section id="about">
-    <h2>Why EduCore</h2>
- 
-    <div>
-      <img src="imgs/" alt="Where clarity meets creativity.">
+
+  <main>
+    <div class="container">
+      <section class="stats" aria-label="Platform statistics">
+        <div><b>100K+</b><span>Active Learners</span></div>
+        <div><b>700+</b><span>Expert Courses</span></div>
+        <div><b>120+</b><span>World-class Instructors</span></div>
+        <div><b>95%</b><span>Satisfaction Rate</span></div>
+      </section>
+
+      <section class="trending" id="courses">
+        <div class="trend-head">
+          <h2 class="purple">Trending Courses This week</h2>
+          <a class="viewall" href="#">View All Courses
+            <svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="#6a12a8" stroke-width="2" aria-hidden="true"><path d="M0 7h20M14 1l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <img src="../imgs/trendingimg1.png" alt="trendingimg1"><span class="sr">Free Trial</span>
+            <div class="body"><span class="tag">Creative</span><h3>UI/UX Reactive Designing Mastery</h3><hr>
+              <div class="price">24.99 $</div><div class="meta">4.9 Rating<br>2400+ Students</div></div>
+          </article>
+          <article class="card">
+            <img src="../imgs/trendingimg2.png" alt="trendingimg2"><span class="sr">Best Seller</span>
+            <div class="body"><span class="tag">AI &amp; ML</span><h3>Machine Learning With Python: Zero to Expert</h3><hr>
+              <div class="price">24.99 $</div><div class="meta">4.9 Rating<br>2400+ Students</div></div>
+          </article>
+          <article class="card">
+            <img src="../imgs/trendingimg3.png" alt="trendingimg3"><span class="sr">New</span>
+            <div class="body"><span class="tag">Dev</span><h3>Full-Stack React &amp; Node.js Development</h3><hr>
+              <div class="price">24.99 $</div><div class="meta">4.9 Rating<br>2400+ Students</div></div>
+          </article>
+          <article class="card">
+            <img src="../imgs/trendingimg4.png" alt="trendingimg4"><span class="sr">Hot</span>
+            <div class="body"><span class="tag">Business</span><h3>Growth Marketing &amp; Data-Driven Strategy</h3><hr>
+              <div class="price">24.99 $</div><div class="meta">4.9 Rating<br>2400+ Students</div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="why" id="about"><h2 class="purple">Why EduCore</h2></section>
     </div>
- 
-    <div>
-      <img src="imgs/" alt="Connected learners illustration">
-      <h3>A smarter way to grow your expertise</h3>
-      <p>We've rethought every aspect of online learning to make it faster, more engaging, and actually effective.</p>
-      <a href="#">Learn More</a>
+
+    <div class="why-grid">
+      <div class="l"><img src="../imgs/about1.png" alt="Where clarity meets creativity."></div>
+      <div class="r">
+        <img src="../imgs/about2.png" alt="Connected learners illustration">
+        <h3>A smarter way to grow your expertise</h3>
+        <p>We've rethought every aspect of online learning to make it faster, more engaging, and actually effective.</p>
+        <a class="btn-purple" href="#">Learn More</a>
+      </div>
     </div>
-  </section>
- 
-  <section>
-    <h2>Take Control of Your Future Now</h2>
-  </section>
- 
-</main>
- 
-<footer>
-  <div>
-    <a href="#"><img src="../imgs/EducoreLogo.png" alt="EduCore"></a>
-    <p>The modern platform for ambitious learners. Build skills, earn credentials, transform your career.</p>
-  </div>
- 
-  <div>
-    <h4>PLATFORM</h4>
-    <ul>
-      <li><a href="#">Browse Courses</a></li>
-      <li><a href="#">Learning Paths</a></li>
-      <li><a href="#">Live Sessions</a></li>
-      <li><a href="#">Certificates</a></li>
-      <li><a href="#">Mobile App</a></li>
-    </ul>
-  </div>
- 
-  <div>
-    <h4>COMPANY</h4>
-    <ul>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Partners</a></li>
-    </ul>
-  </div>
- 
-  <div>
-    <h4>SUPPORT</h4>
-    <ul>
-      <li><a href="#">Help Center</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#">Teach On Educore</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Terms of Service</a></li>
-    </ul>
-  </div>
- 
-  <hr>
-  <p>&copy; 2026 Educore Inc. All rights reserved.</p>
-</footer>
+
+    <div class="cta-box">Take Control of Your Future Now</div>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <div>
+        <img class="logo" src="../imgs/EducoreLogo.png" alt="Educore">
+        <p>The modern platform for ambitious learners.<br>Build skills, earn credentials, transform your career.</p>
+      </div>
+      <div><h4>PLATFORM</h4><ul><li><a href="#">Browse Courses</a></li><li><a href="#">Learning Paths</a></li><li><a href="#">Live Sessions</a></li><li><a href="#">Certificates</a></li><li><a href="#">Mobile App</a></li></ul></div>
+      <div><h4>COMPANY</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li><li><a href="#">Partners</a></li></ul></div>
+      <div><h4>SUPPORT</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Teach On Educore</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="foot-line"></div>
+    <div class="copy"><i>C</i> 2026 Educore Inc. All rights reserved.</div>
+  </footer>
+
 </body>
 </html>
