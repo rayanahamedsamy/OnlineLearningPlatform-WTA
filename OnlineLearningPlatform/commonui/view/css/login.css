@@ -1,0 +1,189 @@
+/* ===== Universal selector ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Element selector ===== */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* ===== Header + Navigation bar (ID selector, position, z-index, Flexbox) ===== */
+#main-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 1rem 2rem;
+    background-color:  #1e3a5f;
+    border-bottom: 4px solid #2e86de;
+    box-shadow: 0 2px 8px #999999;
+}
+
+/* Logo / project name */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.logo-img {
+    height: 40px;
+    border-radius: 5px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5em 1em;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Pseudo-class: hover */
+.nav-link:hover {
+    background-color: #2e86de;
+}
+
+/* Active page indication */
+.active {
+    background-color: #ffffff;
+    color: #1e3a5f;
+    font-weight: bold;
+}
+
+.active:hover {
+    background-color: #ffffff;
+}
+
+/* ===== Grouping selector: headings ===== */
+h1, h3 {
+    color: #1e3a5f;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+/* ===== Form container (box model, width vs max-width) ===== */
+.container {
+    width: 90%;
+    max-width: 450px;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #cccccc;
+}
+
+/* ===== Fieldset, labels and inputs ===== */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    padding: 0 0.5em;
+    color: #2e86de;
+    font-weight: bold;
+}
+
+label, .field-title {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* ===== Buttons (class selector, hover, transition) ===== */
+.btn {
+    display: inline;
+    width: auto;
+    padding: 0.6rem 1.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e86de;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1e3a5f;
+}
+
+.btn-reset {
+    background-color: #999999;
+}
+
+.btn-reset:hover {
+    background-color: #666666;
+}
+
+/* Text link under the form */
+.form-link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.text-link {
+    color: #2e86de;
+}
+
+.text-link:hover {
+    color: #1e3a5f;
+}
+
+/* ===== Footer ===== */
+#footer {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    background-color: #1e3a5f;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* ===== Validation error message (shown by JavaScript) ===== */
+.error {
+    display: none;
+    color: red;
+    font-size: 13px;
+    margin-top: -0.8rem;
+    margin-bottom: 1rem;
+}

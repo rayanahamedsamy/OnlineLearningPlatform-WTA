@@ -2,22 +2,28 @@
 <html>
 <head>
     <title>Instructor Dashboard</title>
+    <link rel="stylesheet" href="../css/instructor_home.css">
 </head>
 <body>
 
-    <h1>Welcome, Instructor!</h1>
+    <ul id="main-header">
+        <li class="logo"><img src="../../commonui/imgs/EducoreLogo.png" class="logo-img">Educore</li>
+        <li><a href="instructor_home.html" class="nav-link active">Dashboard</a></li>
+        <li><a href="../../commonui/view/login.html" class="nav-link">Logout</a></li>
+    </ul>
 
-    <fieldset>
+    <h1 class="page-title">Welcome, Instructor!</h1>
+
+    <fieldset class="card">
         <legend>Instructor Information</legend>
-        <p>Name: Md. Rahim</p>
-        <p>Email: instructor@gmail.com</p>
-        <p>City: Dhaka</p>
+        <p class="info">Name: Md. Rahim</p>
+        <p class="info">Email: instructor@gmail.com</p>
+        <p class="info">City: Dhaka</p>
     </fieldset>
-    <br>
 
-    <fieldset>
+    <fieldset class="card table-card">
         <legend>Enrolled Students</legend>
-        <table border="1">
+        <table>
             <tr>
                 <th>Name</th>
                 <th>Marks</th>
@@ -32,35 +38,34 @@
             </tr>
         </table>
     </fieldset>
-    <br>
 
-    <fieldset>
+    <fieldset class="card">
         <legend>Course Management</legend>
         <h3>Assigned Courses</h3>
-        <ul>
+        <ul class="course-list">
             <li>Web Technologies</li>
             <li>Database Systems</li>
         </ul>
 
         <h3>Instructor Actions</h3>
-        <form>
+        <form id="noticeForm" novalidate>
             <label>Select City/Campus:</label>
             <select name="city">
                 <option value="dhaka">Dhaka</option>
                 <option value="feni">Feni</option>
             </select>
-            <br><br>
 
             <label>Upload Notice:</label>
-            <input type="text" name="notice" placeholder="Enter notice here">
-            <br><br>
+            <input type="text" id="notice" name="notice" placeholder="Enter notice here" required>
+            <span class="error" id="noticeError">Notice must be at least 5 characters</span>
 
-            <input type="submit" value="Post Notice">
-            <input type="reset" value="Clear">
+            <input type="submit" value="Post Notice" class="btn">
+            <input type="reset" value="Clear" class="btn btn-reset">
         </form>
     </fieldset>
 
-    <p><a href="login.html">Logout</a></p>
+    <p id="footer">2026 Educore</p>
 
+    <script src="../js/instructor_home.js"></script>
 </body>
 </html>

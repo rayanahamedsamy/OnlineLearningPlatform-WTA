@@ -2,30 +2,41 @@
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 
-    <h1>Login</h1>
+    <ul id="main-header">
+        <li class="logo"><img src="../imgs/EducoreLogo.png" class="logo-img">Educore</li>
+        <li><a href="hompage.html" class="nav-link">Home</a></li>
+        <li><a href="login.html" class="nav-link active">Login</a></li>
+        <li><a href="../../student/view/register_student.html" class="nav-link">Student Register</a></li>
+        <li><a href="../../instructor/view/register_instructor.html" class="nav-link">Instructor Register</a></li>
+    </ul>
 
-    <form>
+    <form class="container" id="loginForm" novalidate>
+        <h1>Login</h1>
+
         <fieldset>
             <legend>Login Information</legend>
 
             <label>Username:</label>
-            <input type="text" name="username" placeholder="Enter username" required>
-            <br><br>
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
+            <span class="error" id="usernameError">Username must be at least 5 characters</span>
 
             <label>Password:</label>
-            <input type="password" name="password" placeholder="Enter password" required>
-            <br><br>
-
-            <input type="submit" value="Login">
-            <input type="reset" value="Clear">
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <span class="error" id="passwordError">Password must be at least 8 characters</span>
         </fieldset>
+
+        <input type="submit" value="Login" class="btn">
+        <input type="reset" value="Clear" class="btn btn-reset">
+
+        <p class="form-link"><a href="../../student/view/register_student.html" class="text-link">Student Register</a> | <a href="../../instructor/view/register_instructor.html" class="text-link">Instructor Register</a></p>
     </form>
 
-    <p><a href="register_student.html">Student Register</a> | <a href="/instructor/view/register_instructor.html">Instructor Register</a></p>
-    <p><a href="./hompage.html">Go back</a></p>
+    <p id="footer">2026 Educore</p>
 
+    <script src="js/login.js"></script>
 </body>
 </html>

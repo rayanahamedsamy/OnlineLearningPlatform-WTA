@@ -2,27 +2,38 @@
 <html>
 <head>
     <title>Instructor Registration</title>
+    <link rel="stylesheet" href="../css/register_instructor.css">
 </head>
 <body>
 
-    <h1>Instructor Registration</h1>
+    <ul id="main-header">
+        <li class="logo"><img src="../../commonui/imgs/EducoreLogo.png" class="logo-img">Educore</li>
+        <li><a href="../../commonui/view/hompage.html" class="nav-link">Home</a></li>
+        <li><a href="../../commonui/view/login.html" class="nav-link">Login</a></li>
+        <li><a href="../../student/view/register_student.html" class="nav-link">Student Register</a></li>
+        <li><a href="register_instructor.html" class="nav-link active">Instructor Register</a></li>
+    </ul>
 
-    <form>
+    <form class="container" id="instructorForm" novalidate>
+        <h1>Instructor Registration</h1>
+
         <fieldset>
             <legend>Personal Information</legend>
 
             <label>Name:</label>
-            <input type="text" name="name" placeholder="Enter name" required>
-            <br><br>
+            <input type="text" id="name" name="name" placeholder="Enter name" required>
+            <span class="error" id="nameError">Name cannot be empty</span>
 
             <label>Email:</label>
-            <input type="email" name="email" placeholder="xyz@gmail.com" required>
-            <br><br>
+            <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required>
+            <span class="error" id="emailError">Enter a valid email</span>
 
-            <p>Gender:</p>
-            <input type="radio" name="gender" value="male">Male
-            <input type="radio" name="gender" value="female">Female
-            <br><br>
+            <p class="field-title">Gender:</p>
+            <p class="radio-group">
+                <input type="radio" name="gender" value="male" class="radio-input" required>Male
+                <input type="radio" name="gender" value="female" class="radio-input">Female
+            </p>
+            <span class="error" id="genderError">Select a gender</span>
 
             <label>City:</label>
             <select name="city">
@@ -30,29 +41,31 @@
                 <option value="feni">Feni</option>
             </select>
         </fieldset>
-        <br>
 
         <fieldset>
             <legend>Account Information</legend>
 
             <label>Username:</label>
-            <input type="text" name="username" placeholder="Enter username" required>
-            <br><br>
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
+            <span class="error" id="usernameError">Username must be at least 5 characters</span>
 
             <label>Password:</label>
-            <input type="password" name="password" placeholder="Enter password" required>
-            <br><br>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <span class="error" id="passwordError">Password must be at least 8 characters</span>
 
             <label>Confirm Password:</label>
-            <input type="password" name="confirm_password" placeholder="Retype password" required>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Retype password" required>
+            <span class="error" id="confirm_passwordError">Passwords do not match</span>
         </fieldset>
-        <br>
 
-        <input type="submit" value="Register">
-        <input type="reset" value="Clear">
+        <input type="submit" value="Register" class="btn">
+        <input type="reset" value="Clear" class="btn btn-reset">
+
+        <p class="form-link">Already have an account? <a href="../../commonui/view/login.html" class="text-link">Login</a></p>
     </form>
 
-    <p>Already have an account? <a href="login.html">Login</a></p>
+    <p id="footer">2026 Educore</p>
 
+    <script src="../js/register_instructor.js"></script>
 </body>
 </html>
